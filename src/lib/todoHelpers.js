@@ -27,9 +27,11 @@ export const filterTodos = (list, route) => {
   switch(route) {
     case '/active':
       return list.filter(item => !item.isComplete)
+      // eslint-disable-next-line
       break;
     case '/complete':
       return list.filter(item => item.isComplete)
+      // eslint-disable-next-line
       break;
     default:
       return list
